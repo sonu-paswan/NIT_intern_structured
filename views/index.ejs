@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT AP</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" >
+</head>
+
+<body>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="#">Administration</a>
+        <a href="#">Academics</a>
+        <a href="#">Departments</a>
+        <a href="#">Activities</a>
+        <a href="#">Facilities</a>
+        <a href="#">About Us</a>
+    </div>
+</div>
+
+
+<div class="background-div" style="background-image: url(assets/building.webp);">
+    <div id="nav-div">
+        <nav class="navigation">
+            <ul>
+                <li style="margin-left: 2rem"><a href="#">Home</a></li>
+            </ul>
+            <ul>
+                <li class="search-box">
+                    <div class="fa-search">&#x1F50E;&#xFE0E;</div>
+                    <input class="search-txt" type="text" placeholder="Type to search" />
+                    <!-- <a href="#">&#x1F50E;&#xFE0E; Search</a> -->
+                </li>
+                <li><a href="#" onclick="openNav()">&#9776; Menu</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<div class="bg-gradient-div target bottom" id="background">
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 50vh;">
+        <h1 style="font-weight: lighter; color: white; margin: 0;">NIT Arunachal Pradesh</h1>
+        <div class="btn-group">
+            <button>
+                NEW
+            </button>
+            <button>
+                OLD
+            </button>
+        </div>
+        <div>
+            <h5 class="@nitian">— @nitian —</h5>
+        </div>  
+    </div>
+</div>
+
+<script>
+    let targets = document.querySelectorAll('.target');
+
+window.addEventListener("scroll", function(){
+  let doc = document.documentElement;
+  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+  
+  let windowHeight = window.innerHeight;
+  
+  for (i = 0; i < targets.length; ++i) {
+    let target = targets[i];
+    if(target.offsetTop < (top + (windowHeight/2))) {
+      target.classList.add("visible");
+    }
+    else {
+      target.classList.remove("visible");
+    }
+  }
+});
+</script>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+
+</body>
+
+</html>
