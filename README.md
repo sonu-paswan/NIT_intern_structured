@@ -1,10 +1,10 @@
 # How to start
-### you have to install node then type in terminal
+### you have to install node then type command in terminal
 
 ```bash
 npm i 
 ```
-### then
+### then type command
 ```bash
 node App.js
 ```
