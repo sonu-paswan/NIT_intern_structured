@@ -1,9 +1,10 @@
 /* Main Navigation */
 #nav {
-    position:relative;
+    position:sticky;
+    top: 0px;
     width: auto;
     margin:0 auto;
-    padding: 80px;
+    padding: 50px;
     background-color: #2c3e50;
 }
 
@@ -115,7 +116,7 @@ ul#navigation ul li a {
     text-decoration:none;
     display:inline-block;
     border:0 none;
-    float: left;
+    /* float: left; */
     clear:both;
     width:150px;
 }
@@ -156,7 +157,7 @@ footer{
 
 
 .ok ul {
-    float: left;
+    /* float: left; */
     display:inline-block;
    
 }

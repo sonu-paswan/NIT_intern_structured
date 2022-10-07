@@ -38,7 +38,12 @@ console.log(req.body);
 })
 
 App.get('/department/:name',(req,res)=>{
-    console.log(req.params);
+    let {name}=req.params;
+    res.render("department");
+})
+
+App.get('/faculty',(req,res)=>{
+    res.render("faculty");
 })
 
 App.listen(port,()=>{
