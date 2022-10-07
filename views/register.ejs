@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/reg.css">
+
+    <!-- Bootsrap css  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <div><a href="/"><button class="btn btn-dark float-left m-2">Home</button></a></div>
+
+    <h1>Registration Form</h1>
+    <div class="container">
+        <div class="container2" style="width: 70%;">
+            <form action="/register" method="post">
+                
+               
+                <div class="row">
+                    <div class="col-10">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="email" id="email" name="email" placeholder="Enter your Email address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="mobile">Mobile:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="tel" id="mobile" name="mobile" placeholder="Enter your 10 digit mobile number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="gender" required>Gender:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="radio" id="male" name="gender" value="male" />Male
+                        <input type="radio" id="female" name="gender" value="female" />Female
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-10">
+                        <label for="city">City:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="city" name="city" maxlength="20" placeholder="Enter your City">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="pincode">Area PIN:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="number" id="pin" name="pin" maxlength="6" placeholder="Enter your area pin">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="state">State:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="state" name="state" placeholder="Enter your state">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="Department" required>Department:</label>
+                    </div>
+                    <div class="col-90">
+                        <select name="Department" id="Department" style="margin-left: 6%;margin-top:1rem;">
+                            <option value=" ">Select Department:</option>
+                            <option value="BAS">Basic and Applied Science</option>
+                            <option value="BT">Bio Technology</option>
+                            <option value="CHE">chemical Engineering</option>
+                            <option value="CSE">computer Science and Engineering</option>
+                            <option value="CE">Civil Engineering</option>
+                            <option value="ECE">Electronics and Communication Engineering</option>
+                            <option value="EE">Electrical Engineering</option>
+                            <option value="ME">Mechanical Engineering</option>
+                            <option value="MH">Management and Humanities</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="col-90">
+                        <input style="margin-left:1rem" type="password" id="password" name="password" maxlength="20">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10">
+                        <label for="password">Confirm Password:</label>
+                    </div>
+                    <div class="col-90">
+                        <input style="margin-left:1rem" type="password" id="password" name="conpassword" maxlength="20">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Register">
+                </div>
+            </form>    
+        </div>
+    </div>
+
+</body>
+
+</html>
