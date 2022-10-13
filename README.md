@@ -8,6 +8,10 @@ npm i
 ```bash
 node App.js
 ```
+---
+### About Project
+- Example of website for an Institute that is collectively made our team members
+
 ### Technologies used 
 1.Front End
 - html
