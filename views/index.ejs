@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIT AP</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
-
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -23,67 +24,147 @@
         </div>
     </div>
 
-
     <div class="background-div" style="background-image: url(assets/building.webp);">
-        <div id="nav-div">
-            <nav class="navigation">
-                <ul>
-                    <li style="margin-left: 2rem"><a href="#">Home</a></li>
-                </ul>
-                <ul>
-                    <li class="search-box">
-                        <div class="fa-search">&#x1F50E;&#xFE0E;</div>
-                        <input class="search-txt" type="text" placeholder="Type to search" />
-                        <!-- <a href="#">&#x1F50E;&#xFE0E; Search</a> -->
-                    </li>
-                    <li><a href="#" onclick="openNav()">&#9776; Menu</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navigation" id="nav-div">
+            <ul>
+                <li style="margin-left: 2rem"><a href="#">Home</a></li>
+            </ul>
+            <ul>
+                <li class="search-box">
+                    <div class="fa-search">&#x1F50E;&#xFE0E;</div>
+                    <input class="search-txt" type="text" placeholder="Type to search" />
+                    <!-- <a href="#">&#x1F50E;&#xFE0E; Search</a> -->
+                </li>
+                <li><a href="#" onclick="openNav()">&#9776; Menu</a></li>
+            </ul>
+        </nav>
     </div>
+
     <div class="content">
         <h2 class="font-fam-mono">BHAGWAT GITA</h2>
         <p class="font-fam-mono">Karmanye vaadhikaaraste maa phaleshu kadaachana;<br>
             Maa karmaphalahetur bhoor maa te sango’stwakarmani.</p>
     </div>
-    <div class="bg-gradient-div target bottom" id="background">
+    <center class="bg-gradient-div target bottom" id="background">
         <div
             style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 30vh;">
-            <h1 class="font-fam-mono" style="font-size: 200%; font-weight: bolder; color: white; margin: 0;">NIT
-                Arunachal Pradesh
+            <h1 class="font-fam-mono"
+                style="font-size: 200%; font-weight: bolder; color: white; text-shadow: 2px 2px #0000007f; margin: 0;">
+                NIT Arunachal Pradesh
             </h1>
         </div>
-        <div class="content2" style="text-align: center;">
-            <p class="font-fam-mono">National Institute of Technology Arunachal
+        <div class="content2">
+            <p class="font-fam-mono ">National Institute of Technology Arunachal
                 Pradesh (also known as NIT Arunachal
                 Pradesh or NITAP) is a
-                public technical and research institute near Itanagar, the capital of Arunachal Pradesh. NIT Arunachal
-                Pradesh is one of the 31 National Institutes of Technology in India and is recognized as an Institute of
-                National Importance. NIT Arunachal Pradesh started its functioning from 2010 in a temporary campus in
+                public technical and research institute near Itanagar, the capital of Arunachal Pradesh. NIT
+                Arunachal
+                Pradesh is one of the 31 National Institutes of Technology in India and is recognized as an
+                Institute of
+                National Importance. NIT Arunachal Pradesh started its functioning from 2010 in a temporary campus
+                in
                 Yupia, Arunachal Pradesh. The institute presently functions from its permanent Campus at Jote, Papum
                 Pare district, Arunachal Pradesh.</p>
         </div>
-        <div class="btn-group" style="margin-left: 65%">
+        <div class="btn-group" style="margin-left: 38%">
             <a href="https://nitap.ac.in/">
                 <button>
                     OLD Website
                 </button>
             </a>
         </div>
-        <div style="margin-left: 66%;">
-            <h5 class="@nitian">— @nitian —</h5>
+    </center>
+
+    <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+        <div class="container p-4">
+
+            <div class="row mt-4">
+
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">NIT AP</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra sit amet est sed
+                        tristique. Suspendisse fermentum tempus libero nec.
+                    </p>
+
+                    <div class="mt-3">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <ul class="fa-ul" style="margin-left: 1.65em; margin-top: 2.9em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2"> Jote,
+                                District:
+                                Papum Pare
+                                Arunachal Pradesh, India - 791113</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                class="ms-2">nitapadmin@nitap.ac.in</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+91
+                                0360-2954549
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Mon - Thu:</td>
+                                <td>8am - 6pm</td>
+                            </tr>
+                            <tr>
+                                <td>Fri - Sat:</td>
+                                <td>8am - 4pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>9am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
+        <section class="" style="width: 100%;">
+            <form action="" style="width: 100%;">
+                <div class="row d-flex justify-content-center" style="width: 100%;">
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Sign up for our newsletter</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.9); color: aliceblue;">
+            © 2022 Copyright
+        </div>
+    </footer>
 
     <script>
         let targets = document.querySelectorAll('.target');
