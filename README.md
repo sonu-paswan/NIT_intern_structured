@@ -12,6 +12,13 @@ node App.js
 ### About Project
 - Example of website for an Institute that is collectively made our team members
 
+### project team members
+- Sonu Paswan
+- Dev Singh Kanyal
+- Kamin Pajing
+- Rikto Padu 
+- Louich Taid
+
 ### Technologies used 
 1.Front End
 - html
