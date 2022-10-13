@@ -190,7 +190,7 @@ nav ul li a{
   .content2 {
     position: relative;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 50%;
     padding: 20px;
@@ -244,6 +244,7 @@ nav ul li a{
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	height: 100vh;
+    z-index: -2;
 }
 
 @keyframes gradient {
@@ -284,7 +285,7 @@ nav ul li a{
 
 .btn-group button {
     background-color: #ffffff00;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px dashed rgb(65, 65, 65);
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
@@ -326,3 +327,18 @@ nav ul li a{
     transform: translateX(0);
   }
   
+  #background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  @media (max-width: 750px) {
+    #background-video { display: none; }
+}
