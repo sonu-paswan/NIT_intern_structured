@@ -10,11 +10,7 @@ App.use(express.static("public"));
 
 // mongoose connection
 // local 
-// mongoose.connect('mongodb://localhost:27017/department');
-
-//online
-mongoose.connect("mongodb+srv://Sonu2806:test2806@cluster0.dqb6v.mongodb.net/department");
-
+mongoose.connect('mongodb://localhost:27017/department');
 
 const dSchema=Schema({
     id:Number,
