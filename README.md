@@ -10,7 +10,7 @@ node App.js
 ```
 ---
 ### About Project
-- Example of website for an Institute that is collectively made our team members
+- Example of a website for an institute that is collectively made by our team members
 
 ### project team members
 - Sonu Paswan
